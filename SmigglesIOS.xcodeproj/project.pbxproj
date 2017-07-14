@@ -12,9 +12,12 @@
 		B6F367401F0F58A80045ACC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F3673E1F0F58A80045ACC8 /* Main.storyboard */; };
 		B6F367421F0F58A80045ACC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F367411F0F58A80045ACC8 /* Assets.xcassets */; };
 		B6F367451F0F58A80045ACC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F367431F0F58A80045ACC8 /* LaunchScreen.storyboard */; };
+		D5E81BECBAC93C702DD965D8 /* Pods_SmigglesIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D4472475CC221AF18F465C /* Pods_SmigglesIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03B02E0B40A20C1546FF96D7 /* Pods-SmigglesIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmigglesIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmigglesIOS/Pods-SmigglesIOS.release.xcconfig"; sourceTree = "<group>"; };
+		05D4472475CC221AF18F465C /* Pods_SmigglesIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmigglesIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F367371F0F58A80045ACC8 /* SmigglesIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmigglesIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F3673A1F0F58A80045ACC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6F3673C1F0F58A80045ACC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B6F367411F0F58A80045ACC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F367441F0F58A80045ACC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6F367461F0F58A80045ACC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C74E86CAA13E535F76E68252 /* Pods-SmigglesIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmigglesIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmigglesIOS/Pods-SmigglesIOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5E81BECBAC93C702DD965D8 /* Pods_SmigglesIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55ECE9A27B0BAE58160A388E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C74E86CAA13E535F76E68252 /* Pods-SmigglesIOS.debug.xcconfig */,
+				03B02E0B40A20C1546FF96D7 /* Pods-SmigglesIOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B6F3672E1F0F58A80045ACC8 = {
 			isa = PBXGroup;
 			children = (
 				B6F367391F0F58A80045ACC8 /* SmigglesIOS */,
 				B6F367381F0F58A80045ACC8 /* Products */,
+				55ECE9A27B0BAE58160A388E /* Pods */,
+				B8353B9FE50F37D7A666E1EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = SmigglesIOS;
 			sourceTree = "<group>";
 		};
+		B8353B9FE50F37D7A666E1EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05D4472475CC221AF18F465C /* Pods_SmigglesIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F367491F0F58A80045ACC8 /* Build configuration list for PBXNativeTarget "SmigglesIOS" */;
 			buildPhases = (
+				C35ED06E78B8DFD3A4C4C986 /* [CP] Check Pods Manifest.lock */,
 				B6F367331F0F58A80045ACC8 /* Sources */,
 				B6F367341F0F58A80045ACC8 /* Frameworks */,
 				B6F367351F0F58A80045ACC8 /* Resources */,
+				B2D088AA229F3CE60EDC0BAE /* [CP] Embed Pods Frameworks */,
+				CD61F4788E83B2CF08B4907A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					B6F367361F0F58A80045ACC8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2D088AA229F3CE60EDC0BAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmigglesIOS/Pods-SmigglesIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C35ED06E78B8DFD3A4C4C986 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD61F4788E83B2CF08B4907A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SmigglesIOS/Pods-SmigglesIOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B6F367331F0F58A80045ACC8 /* Sources */ = {
@@ -258,6 +334,7 @@
 		};
 		B6F3674A1F0F58A80045ACC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74E86CAA13E535F76E68252 /* Pods-SmigglesIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmigglesIOS/Info.plist;
@@ -270,6 +347,7 @@
 		};
 		B6F3674B1F0F58A80045ACC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03B02E0B40A20C1546FF96D7 /* Pods-SmigglesIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SmigglesIOS/Info.plist;
@@ -299,6 +377,7 @@
 				B6F3674B1F0F58A80045ACC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
