@@ -23,8 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func startApplication() {
         session.delegate = self
-//        visit(URL(string: "https://smiggles-production.herokuapp.com/")!)
-        visit(URL(string: "http://localhost:3000")!)
+        visit(URL(string: "https://smiggles-production.herokuapp.com/")!)
+        //visit(URL(string: "http://localhost:3000")!)
         
     }
     
