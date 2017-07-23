@@ -1,4 +1,4 @@
-# Turbolinks iOS Template
+# Smiggles Turbolinks iOS Adapter
 
 ## Quick Setup
 * Check out this project
